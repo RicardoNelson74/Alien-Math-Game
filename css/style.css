@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #000000;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    
+}
+
+.ufo
+{
+    display: inline-block;
+    background-color: #00ff00;
+    margin: 0 10px;
+    padding: 10px 125px;
+
+}
+
+footer
+{
+    display: inline-block;
+    background-color: #00fff0;
+    margin: 0 10px;
+    padding: 10px 50px;
+    margin-top: 85vh;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+   
+}
