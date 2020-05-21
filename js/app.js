@@ -46,6 +46,7 @@ function main()
 
     let i = 10
     const canon = document.querySelector('#canon');
+    const bullet = document.querySelector('#bullet');
     let keycode=i || i.keycode;
 
    window.addEventListener('keydown',function(event)
@@ -67,6 +68,10 @@ function main()
            canon.style.marginLeft = `${marginLeftPx}px`;
                 
            break;
+           case 'ArrowDown':
+            marginLeftPx = marginLeftPx + 50;
+            bullet.style.marginBottom = `${marginLeftPx}px`;
+            
         }
     });
 
