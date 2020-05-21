@@ -9,24 +9,6 @@ function randomquestion()
 
 }
 
-function moveright(i)
-{   
-   // i+=10
-
-    canon=document.querySelector('#canon');
-    //canon.style.marginleft= `${i} px`;
-    canon.style.marginright= parseInt(canon.style.right) +10 + 'px' ;
-
-}
-
-function moveleft(i)
-{
-    //i-=10
-
-    canon=document.querySelector('#canon');
-    canon.style.marginleft= parseInt(canon.style.left) -10 + 'px' ;
-
-}
 
 function main()
 {
@@ -76,12 +58,14 @@ function main()
        switch (event.key)
        {
            case 'ArrowLeft' :
-                marginLeftPx = marginLeftPx - 10;
-                canon.style.marginLeft = `${marginLeftPx}px`;
+            marginLeftPx = marginLeftPx - 10;
+            canon.style.marginLeft = `${marginLeftPx}px`;
+                
            break;
            case 'ArrowRight' : 
-                marginLeftPx = marginLeftPx + 10;
-                canon.style.marginLeft = `${marginLeftPx}px`;
+           marginLeftPx = marginLeftPx + 10;
+           canon.style.marginLeft = `${marginLeftPx}px`;
+                
            break;
         }
     });
