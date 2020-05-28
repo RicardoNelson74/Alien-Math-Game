@@ -9,6 +9,12 @@ function randomquestion()
 
 }
 
+function removeufo(ufo)
+    {
+        ufo.style.display="none";
+    }
+
+
 
 function main()
 {
@@ -75,8 +81,20 @@ function main()
         }
     });
 
+    window.addEventListener("click",function(event)
+    {
+
+        const element  = event.target;
+
+       if(element.className=="ufo")
+       {
+         removeufo(element);
+       }
+
    
-   }  
+   });
+
+}
 
 
  main()
